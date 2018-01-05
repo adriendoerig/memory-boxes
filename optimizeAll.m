@@ -3,6 +3,8 @@
 
 clear
 
+readoutTime = .545
+
 % directory management
 progPath = fileparts(which(mfilename)); % The program directory
 cd(progPath) % go there just in case we are far away
@@ -34,7 +36,7 @@ for expType = [{'E8'}, {'E18'}]
         cd(progPath)
         
         % compute best params, plot output with these params for this condition and save plot
-        pOpt = fitParametersBoxesNoNDtimeChooseReadoutTime(expType{1},subjectID);
+        pOpt = fitParametersBoxesNoNDtimeChooseReadoutTime(expType{1},subjectID, readoutTime);
         
         % save best params
         cd(resPath)
