@@ -34,7 +34,7 @@ for expType = [{'E8'}, {'E18'}]
         cd(progPath)
         
         % compute best params, plot output with these params for this condition and save plot
-        pOpt = fitParametersBoxesNoNDtime(expType{1},subjectID);
+        pOpt = fitParametersBoxesNoNDtimeChooseReadoutTime(expType{1},subjectID);
         
         % save best params
         cd(resPath)
