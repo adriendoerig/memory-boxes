@@ -17,7 +17,7 @@ end
 
 % run over everything and optimize
 % for expType = [{'E4'}, {'E8'}, {'E18'}]
-for expType = [{'E8'}, {'E18'}]
+for expType = [{'E4'}]
     
     cd(progPath)
     
